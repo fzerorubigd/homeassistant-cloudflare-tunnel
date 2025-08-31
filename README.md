@@ -23,7 +23,7 @@ You need to save the text after `--token`; this is the `cf_token` needed later. 
 On the Hostname part, select the Subdomain and Domain for external access to your Home Assistant. You can leave the subdomain empty to use the main domain. Do not add anything to the path unless you know what you are doing.
 
 On the Service section, add the IP and the protocol of your HA from inside the network (it is normally HTTP, and then an IP as the URL). For example, my Home Assistant local address is `http://192.168.1.100:8123`, so it will be like this image:
-![The Cloudflare config section](images/cf_sample.png)
+![The Cloudflare config section](https://raw.githubusercontent.com/fzerorubigd/homeassistant-cloudflare-tunnel/main/hass-addon/images/cf_sample.png)
 
 Save the changes.
 
