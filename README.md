@@ -35,6 +35,8 @@ Install the Addon
 3. Paste the URL of this repository: `https://github.com/fzerorubigd/homeassistant-cloudflare-tunnel` and click **Add**.
 4. The addon should now appear in the store. Click on it and then click **Install**.
 
+**Note:** This addon is built locally on your machine. The installation process can take a few minutes.
+
 After installing it, on the configuration tab, add the `cf_token` from the previous step. If everything is OK, the log should show that Cloudflared is running and has registered your tunnel.
 
 Setup the proxy

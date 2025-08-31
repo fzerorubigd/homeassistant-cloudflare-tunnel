@@ -3,7 +3,6 @@ description: "Cloudflare tunnel to expose the homeassistant"
 
 version: "0.1.0"
 url: "https://github.com/fzerorubigd/homeassitant-cf"
-image: "fzerorubigd/hass-addon-cf-{arch}"
 slug: "cf_tunnel"
 init: false
 arch:
