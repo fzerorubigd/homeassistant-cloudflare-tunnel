@@ -29,7 +29,11 @@ Save the changes.
 
 Install the Addon
 ===
-TODO: How to add it to somewhere so it is easy to install?
+
+1. Go to **Settings > Add-ons > Add-on Store**.
+2. Click the three-dot menu in the top right and select **Repositories**.
+3. Paste the URL of this repository: `https://github.com/fzerorubigd/homeassitant-cf` and click **Add**.
+4. The addon should now appear in the store. Click on it and then click **Install**.
 
 After installing it, on the configuration tab, add the `cf_token` from the previous step. If everything is OK, the log should show that Cloudflared is running and has registered your tunnel.
 
