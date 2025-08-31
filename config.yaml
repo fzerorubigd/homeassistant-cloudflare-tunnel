@@ -1,0 +1,15 @@
+name: "Cloudflare Tunnel"
+description: "Cloudflare tunnel to expose the homeassistant"
+version: "1.0.0"
+slug: "cf_tunnel"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+options:
+  cf_token: "UPDATE-ME"
+schema:
+  cf_token: str
