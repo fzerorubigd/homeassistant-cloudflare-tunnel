@@ -1,0 +1,14 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="128" height="128" rx="20" fill="#f0f0f0"/>
+
+  <!-- Cloud -->
+  <circle cx="50" cy="50" r="20" fill="#FDB040"/>
+  <circle cx="70" cy="45" r="15" fill="#FDB040"/>
+  <circle cx="80" cy="60" r="10" fill="#FDB040"/>
+  <rect x="50" y="50" width="30" height="20" fill="#FDB040"/>
+
+  <!-- House -->
+  <rect x="44" y="75" width="40" height="30" fill="#41B5F4"/>
+  <path d="M40 75 L 64 55 L 88 75 Z" fill="#41B5F4"/>
+</svg>
