@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.1
+
+- Fix the add-on failing to start with `exec /run.sh: no such file or
+  directory`. `run.sh` used a `bashio` shebang, but the image is built from
+  plain Alpine, which ships neither `bashio` nor the s6 `with-contenv`
+  wrapper. The script now uses a `/bin/sh` shebang, reads `cf_token` directly
+  from `/data/options.json` with `jq`, and `exec`s cloudflared. The token
+  guard now only fails on an unset or placeholder value; the base64 check is
+  advisory and never blocks a valid token.
+
 ## 0.2.0
 
 - Fix the architecture mapping so non-amd64 builds (aarch64, armv7, armhf, i386)
