@@ -1,8 +1,8 @@
 name: "Cloudflare Tunnel"
 description: "Cloudflare tunnel to expose the homeassistant"
 
-version: "0.1.0"
-url: "https://github.com/fzerorubigd/homeassitant-cf"
+version: "0.2.0"
+url: "https://github.com/fzerorubigd/homeassistant-cloudflare-tunnel"
 slug: "cf_tunnel"
 init: false
 arch:
@@ -14,4 +14,4 @@ arch:
 options:
   cf_token: "UPDATE-ME"
 schema:
-  cf_token: str
+  cf_token: password
