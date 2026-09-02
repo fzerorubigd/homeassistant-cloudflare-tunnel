@@ -64,3 +64,15 @@ http:
 ```
 
 The IP address from the log is the container's IP. The `/24` in `172.30.33.0/24` is the CIDR notation for the network range, meaning that any IP from `172.30.33.0` to `172.30.33.255` will be trusted. This is generally safe as it's the internal Docker network for Home Assistant. After adding this to your configuration, verify the configuration and restart Home Assistant. You should now be able to connect to your Home Assistant from anywhere using the new address.
+
+Upgrading
+===
+
+This add-on is built locally from this repository, so upgrades work like any other Home Assistant add-on once Home Assistant sees a newer `version` in the repo.
+
+1. In Home Assistant, go to **Settings > Add-ons > Add-on Store**.
+2. Open the three-dot menu in the top right and click **Check for updates** (or **Reload**) so Home Assistant re-reads this repository.
+3. Open the **Cloudflare Tunnel** add-on. If a newer version is available, an **Update** button appears on the add-on page.
+4. Click **Update**. As with the first install, the add-on is rebuilt locally, so this can take a few minutes.
+
+Your configuration (the `cf_token` and any other options) is preserved across updates, so there is nothing to re-enter. The tunnel will be briefly offline while the add-on restarts on the new version.
