@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.2
+
+- Update `cloudflared` from 2024.12.2 to 2026.10.4. Cloudflare asks connectors
+  to run 2026.10.2 or newer because it is removing trust in the eMudhra/emSign
+  certificate authorities; older connectors may stop connecting.
+- Behaviour change inherited from `cloudflared` 2026.4.0: the default
+  `--edge-ip-version` is now `auto` instead of `4`, so the tunnel may connect
+  over IPv6 when the host resolves it first. Hosts with broken IPv6 may see
+  connection errors.
+
 ## 0.2.1
 
 - Fix the add-on failing to start with `exec /run.sh: no such file or
